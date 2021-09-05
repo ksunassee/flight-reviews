@@ -1,6 +1,7 @@
 module Api
 	module V1
 		class AirlinesController < ActionController
+			protect_from_forgery with: :null_session
 			def index
 				airline = Airline.all
 
@@ -50,9 +51,9 @@ module Api
 				params.require(:airline).permit(:name, image_url)
 			end
 
-			def options
-				@options ||= { include: %i[reviews] }
-			end
+			# def options
+			# 	@options ||= { include: %i[reviews] }
+			# end
 		end
 	end
 end

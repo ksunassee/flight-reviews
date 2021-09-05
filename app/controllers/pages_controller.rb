@@ -1,4 +1,5 @@
 class PagesController < ActionController
-  def index
-  end
+	def index
+		
+	end
 end
