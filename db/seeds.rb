@@ -37,7 +37,7 @@ reviews = Review.create([
 	},
 	{
 		title: "Bad airline",
-		description: "I had a bad time",
+		description: "I had a bad time and not good food",
 		score: 1,
 		airline: airlines.first
 	}
