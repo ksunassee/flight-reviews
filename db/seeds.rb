@@ -18,14 +18,19 @@ airlines = Airline.create([
 		name: "Air France",
 		image_url: "https://res.cloudinary.com/dqmgxbzds/image/upload/v1630831821/Airlines%20logo/air-france_efbq4w.jpg"
 	},
-	{
-		name: "British Airways"
+{
+		name: "British Airline",
 		image_url: "https://res.cloudinary.com/dqmgxbzds/image/upload/v1630831821/Airlines%20logo/British-airways_ww3o4a.jpg"
 	},
 	{
-		name: "Vietnam Airline"
+		name: "Vietnam Airline",
 		image_url: "https://res.cloudinary.com/dqmgxbzds/image/upload/v1630831821/Airlines%20logo/vn-airline_tcwtwv.jpg"
-	}
+	},
+	{
+		name: "Singapore Airline",
+		image_url: "https://res.cloudinary.com/dqmgxbzds/image/upload/v1630831820/Airlines%20logo/singapore-airline_twy3zz.png"
+	},
+	
 ])
 
 reviews = Review.create([
@@ -41,5 +46,4 @@ reviews = Review.create([
 		score: 1,
 		airline: airlines.first
 	}
-
 ])
